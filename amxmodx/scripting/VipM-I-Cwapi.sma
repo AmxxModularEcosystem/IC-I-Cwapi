@@ -41,7 +41,7 @@ public VipM_IC_OnInitTypes() {
 @OnItemGive(const UserId, const Trie:tParams) {
     new ItemId = CWAPI_Weapons_Give(
         UserId,
-        VipM_Params_GetCell(tParams, "WeaponId"),
+        VipM_Params_GetCell(tParams, "Name"),
         VipM_Params_GetCell(tParams, "GiveType", CWAPI_GT_SMART)
     );
 
