@@ -8,7 +8,7 @@
 #pragma compress 1
 
 public stock const PluginName[] = "[VipM-I] CWAPI";
-public stock const PluginVersion[] = "2.1.0";
+public stock const PluginVersion[] = "2.1.1";
 public stock const PluginAuthor[] = "ArKaNeMaN";
 public stock const PluginURL[] = "https://github.com/ArKaNeMaN/VipM-I-Cwapi";
 public stock const PluginDescription[] = "[VipModular-Item] Custom Weapons API.";
@@ -17,6 +17,7 @@ new const TYPE_NAME[] = "Cwapi";
 
 public VipM_IC_OnInitTypes() {
     register_plugin(PluginName, PluginVersion, PluginAuthor);
+    ParamsController_Init();
 
     VipM_IC_RegisterType(TYPE_NAME);
     VipM_IC_RegisterTypeEvent(TYPE_NAME, ItemType_OnRead, "@OnItemRead");
@@ -53,7 +54,7 @@ public VipM_IC_OnInitTypes() {
 }
 
 Array:PrepareParams() {
-    static Array:aParams;
+    static Array:aParams = Invalid_Array;
     if (aParams != Invalid_Array) {
         return aParams;
     }
