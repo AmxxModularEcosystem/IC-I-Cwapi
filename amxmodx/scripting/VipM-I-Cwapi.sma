@@ -18,6 +18,7 @@ new const TYPE_NAME[] = "Cwapi";
 public VipM_IC_OnInitTypes() {
     register_plugin(PluginName, PluginVersion, PluginAuthor);
     ParamsController_Init();
+    CWAPI_Init();
 
     VipM_IC_RegisterType(TYPE_NAME);
     VipM_IC_RegisterTypeEvent(TYPE_NAME, ItemType_OnRead, "@OnItemRead");
