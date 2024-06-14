@@ -4,14 +4,11 @@
 #include <cwapi>
 #include <ParamsController>
 
-#pragma semicolon 1
-#pragma compress 1
-
-public stock const PluginName[] = "[VipM-I] CWAPI";
+public stock const PluginName[] = "[IC-I] CWAPI";
 public stock const PluginVersion[] = "2.1.1";
 public stock const PluginAuthor[] = "ArKaNeMaN";
-public stock const PluginURL[] = "https://github.com/ArKaNeMaN/VipM-I-Cwapi";
-public stock const PluginDescription[] = "[VipModular-Item] Custom Weapons API.";
+public stock const PluginURL[] = "https://github.com/AmxxModularEcosystem/IC-I-Cwapi";
+public stock const PluginDescription[] = "[ItemsController-Item] Integration with CustomWeaponsAPI.";
 
 new const TYPE_NAME[] = "Cwapi";
 
