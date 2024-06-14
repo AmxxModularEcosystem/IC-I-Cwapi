@@ -116,9 +116,9 @@ jobs:
       - name: Compile plugins
         working-directory: amxmodx/scripting/
         env:
-          CWAPI_INCLUDE_PATH: ${{ env.CWAPI_INCLUDE_PATH }}
-          PARAMS_CONRTOLLER_INCLUDE_PATH: ${{ env.PARAMS_CONRTOLLER_INCLUDE_PATH }}
-          VIP_MODULAR_INCLUDE_PATH: ${{ env.VIP_MODULAR_INCLUDE_PATH }}
+          CWAPI_INCLUDE: ${{ env.CWAPI_INCLUDE_PATH }}
+          PARAMS_CONRTOLLER_INCLUDE: ${{ env.PARAMS_CONRTOLLER_INCLUDE_PATH }}
+          VIP_MODULAR_INCLUDE: ${{ env.VIP_MODULAR_INCLUDE_PATH }}
         run: |
           compile() {
             sourcefile=$1
@@ -130,9 +130,9 @@ jobs:
             echo -n "Compiling $sourcefile ... "
             amxxpc $sourcefile -o"$output_path" \
               -i"include" \
-              -i"$CWAPI_INCLUDE_PATH" \
-              -i"$PARAMS_CONRTOLLER_INCLUDE_PATH" \
-              -i"$VIP_MODULAR_INCLUDE_PATH"
+              -i"$CWAPI_INCLUDE" \
+              -i"$PARAMS_CONRTOLLER_INCLUDE" \
+              -i"$VIP_MODULAR_INCLUDE"
           }
           export -f compile
 
