@@ -5,7 +5,7 @@
 #include <ParamsController>
 
 public stock const PluginName[] = "[IC-I] CWAPI";
-public stock const PluginVersion[] = "2.1.2";
+public stock const PluginVersion[] = "2.2.0";
 public stock const PluginAuthor[] = "ArKaNeMaN";
 public stock const PluginURL[] = "https://github.com/AmxxModularEcosystem/IC-I-Cwapi";
 public stock const PluginDescription[] = "[ItemsController-Item] Integration with CustomWeaponsAPI.";
@@ -42,7 +42,8 @@ public VipM_IC_OnInitTypes() {
         UserId,
         VipM_Params_GetCell(tParams, "Name"),
         VipM_Params_GetCell(tParams, "GiveType", CWAPI_GT_SMART),
-        VipM_Params_GetCell(tParams, "ForceActive", false)
+        VipM_Params_GetCell(tParams, "ForceActive", false),
+        VipM_Params_GetCell(tParams, "BpAmmo", -1)
     );
 
     if (ItemId < 0) {
@@ -63,6 +64,7 @@ Array:PrepareParams() {
     ArrayPushCell(aParams, ParamsController_Param_Construct("Name", CWAPI_WEAPON_PARAM_TYPE_NAME, true));
     ArrayPushCell(aParams, ParamsController_Param_Construct("GiveType", CWAPI_GIVE_TYPE_PARAM_TYPE_NAME, false));
     ArrayPushCell(aParams, ParamsController_Param_Construct("ForceActive", "Boolean", false));
+    ArrayPushCell(aParams, ParamsController_Param_Construct("BpAmmo", "Integer", false));
 
     return aParams;
 }

@@ -14,9 +14,8 @@ on:
 
 env:
   PACKAGE_NAME: IC-I-Cwapi
-  STORE_README: 1
   PARAMS_CONRTOLLER_TAG: 1.0.0-b4
-  CWAPI_TAG: 1.0.0-b2
+  CWAPI_TAG: 1.0.0-b3
   VIP_MODULAR_TAG: 5.0.0-b12
 
 jobs:
