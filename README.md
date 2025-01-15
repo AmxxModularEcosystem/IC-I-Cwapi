@@ -5,7 +5,7 @@
 ## Требования
 
 - [VipModular](https://github.com/ArKaNeMaN/amxx-VipModular-pub) v5.0.0-b12 или новее
-- [CustomWeaponsAPI](https://github.com/AmxxModularEcosystem/CustomWeaponsAPI) v1.0.0-b2 или новее
+- [CustomWeaponsAPI](https://github.com/AmxxModularEcosystem/CustomWeaponsAPI) v1.0.0-b3 или новее
 - [ParamsController](https://github.com/AmxxModularEcosystem/ParamsController) v1.0.0-b4 или новее
 
 ## Параметры
