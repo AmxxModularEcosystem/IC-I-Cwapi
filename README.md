@@ -34,6 +34,7 @@
 
   "Name": "Vip_Ak47",
   "GiveType": "Replace",
-  "ForceActive": true
+  "ForceActive": true,
+  "BpAmmo": 60
 }
 ```
